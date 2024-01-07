@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NewsItems from './NewsItems'
 import Spinner from './Spinners'
+import defaultImage from '../imagenot.png'
 
 export default class News extends Component {
   constructor(props) {
@@ -94,7 +95,7 @@ export default class News extends Component {
                     <NewsItems
                       tittle={element.title}
                       description={element.description}
-                      imageURL={element.urlToImage}
+                      imageURL={element.urlToImage || defaultImage}
                       newsURL={element.url}
                       author={element.author}
                       date={element.publishedAt}

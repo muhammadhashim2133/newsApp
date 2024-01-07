@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../TheNestHorizontal.png'
 
 export default class NevBar extends Component {
   render() {
     return (
-      <nav className='navbar navbar-expand-lg bg-body-tertiary'>
+      <nav className='navbar navbar-expand-lg bg-body-tertiary  mx-auto'>
         <div className='container-fluid'>
-          <Link className='navbar-brand' to='#'>
-            Navbar
+          <Link className='navbar-brand mx-3' to='#'>
+            <img src={logo} alt='logo' height={60} width={150} />
           </Link>
           <button
             className='navbar-toggler'
